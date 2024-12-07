@@ -5,7 +5,7 @@ local Window = OrionLib:MakeWindow({Name = "Aczois", HidePremium = false, IntroT
 --------------------------------------------------------------------------------------------------------------------A--Tab
 local Tab = Window:MakeTab({
 	Name = "Games",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://12684121195",
 	PremiumOnly = false
 })
 --------------------------------------------------------------------------------------------------------------------A--Section
