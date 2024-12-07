@@ -1,19 +1,18 @@
+--------------------------------------------------------------------------------------------------------------------Library
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
-
+--------------------------------------------------------------------------------------------------------------------Window
 local Window = OrionLib:MakeWindow({Name = "Aczois", HidePremium = false, IntroText = "By Aczois", SaveConfig = true, ConfigFolder = "OrionTest"})
-
+--------------------------------------------------------------------------------------------------------------------Tab
 local Tab = Window:MakeTab({
 	Name = "Games",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-	--A
+--------------------------------------------------------------------------------------------------------------------A--Section
 local Section = Tab:AddSection({
 	Name = "A"
 })
-
-	--B
+--------------------------------------------------------------------------------------------------------------------B--Section
 local Section = Tab:AddSection({
 	Name = "B"
 })
