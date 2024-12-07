@@ -89,6 +89,13 @@ local Section = Tab:AddSection({
 	Name = "M"
 })
 
+Tab:AddButton({
+	Name = "Murderers VS Sheriffs Duels (Hit Box)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/MVSD/HitBox"))()
+  	end    
+})
+
 	--N
 local Section = Tab:AddSection({
 	Name = "N"
