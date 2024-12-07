@@ -50,12 +50,10 @@ local Section = Tab:AddSection({
 	Name = "G"
 })
 
-Tab:AddLabel("Gives $10,000")
-
-Tab:AddParagraph("Paragraph","Gives $10,000")
+Tab:AddParagraph("Game Store Tycoon 🎮","Gives $10,000")
 
 Tab:AddButton({
-	Name = "Game Store Tycoon",
+	Name = "Game Store Tycoon 🎮",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/GameStoreTycoon"))()
   	end    
