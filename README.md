@@ -1,2 +1,0 @@
-# RBX
-Roblox Scripts
