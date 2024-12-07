@@ -16,7 +16,6 @@ local Section = Tab:AddSection({
 local Section = Tab:AddSection({
 	Name = "B"
 })
-
 --------------------------------------------------------------------------------------------------------------------C--Section
 local Section = Tab:AddSection({
 	Name = "C"
