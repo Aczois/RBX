@@ -51,7 +51,9 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddLabel("Gives $10,000")
+
 Tab:AddParagraph("Paragraph","Gives $10,000")
+
 Tab:AddButton({
 	Name = "Game Store Tycoon",
 	Callback = function()
