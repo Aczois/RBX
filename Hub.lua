@@ -8,32 +8,32 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
---A
+	--A
 local Section = Tab:AddSection({
 	Name = "A"
 })
 
---B
+	--B
 local Section = Tab:AddSection({
 	Name = "B"
 })
 
---C
+	--C
 local Section = Tab:AddSection({
 	Name = "C"
 })
 
---D
+	--D
 local Section = Tab:AddSection({
 	Name = "D"
 })
 
---E
+	--E
 local Section = Tab:AddSection({
 	Name = "E"
 })
 
---F
+	--F
 local Section = Tab:AddSection({
 	Name = "F"
 })
@@ -45,102 +45,102 @@ Tab:AddButton({
   	end    
 })
 
---G
+	--G
 local Section = Tab:AddSection({
 	Name = "G"
 })
 
---H
+	--H
 local Section = Tab:AddSection({
 	Name = "H"
 })
 
---I
+	--I
 local Section = Tab:AddSection({
 	Name = "I"
 })
 
---J
+	--J
 local Section = Tab:AddSection({
 	Name = "J"
 })
 
---K
+	--K
 local Section = Tab:AddSection({
 	Name = "K"
 })
 
---L
+	--L
 local Section = Tab:AddSection({
 	Name = "L"
 })
 
---M
+	--M
 local Section = Tab:AddSection({
 	Name = "M"
 })
 
---N
+	--N
 local Section = Tab:AddSection({
 	Name = "N"
 })
 
---O
+	--O
 local Section = Tab:AddSection({
 	Name = "O"
 })
 
---P
+	--P
 local Section = Tab:AddSection({
 	Name = "P"
 })
 
---Q
+	--Q
 local Section = Tab:AddSection({
 	Name = "Q"
 })
 
---R
+	--R
 local Section = Tab:AddSection({
 	Name = "R"
 })
 
---S
+	--S
 local Section = Tab:AddSection({
 	Name = "S"
 })
 
---T
+	--T
 local Section = Tab:AddSection({
 	Name = "T"
 })
 
---U
+	--U
 local Section = Tab:AddSection({
 	Name = "U"
 })
 
---V
+	--V
 local Section = Tab:AddSection({
 	Name = "V"
 })
 
---W
+	--W
 local Section = Tab:AddSection({
 	Name = "W"
 })
 
---X
+	--X
 local Section = Tab:AddSection({
 	Name = "X"
 })
 
---Y
+	--Y
 local Section = Tab:AddSection({
 	Name = "Y"
 })
 
---Z
+	--Z
 local Section = Tab:AddSection({
 	Name = "Z"
 		
