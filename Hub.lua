@@ -2,52 +2,40 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Acz
 
 local Window = OrionLib:MakeWindow({Name = "Aczois", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
---a
-
 local Tab = Window:MakeTab({
-	Name = "A",
+	Name = "Games",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
---b
-
-local Tab = Window:MakeTab({
-	Name = "B",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--A
+local Section = Tab:AddSection({
+	Name = "A"
 })
 
---c
-
-local Tab = Window:MakeTab({
-	Name = "C",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--B
+local Section = Tab:AddSection({
+	Name = "B"
 })
 
---d
-
-local Tab = Window:MakeTab({
-	Name = "D",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--C
+local Section = Tab:AddSection({
+	Name = "C"
 })
 
---e
-
-local Tab = Window:MakeTab({
-	Name = "E",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--D
+local Section = Tab:AddSection({
+	Name = "D"
 })
 
---f
+--E
+local Section = Tab:AddSection({
+	Name = "E"
+})
 
-local Tab = Window:MakeTab({
-	Name = "F",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--F
+local Section = Tab:AddSection({
+	Name = "F"
 })
 
 Tab:AddButton({
@@ -57,50 +45,104 @@ Tab:AddButton({
   	end    
 })
 
---g
-
-local Tab = Window:MakeTab({
-	Name = "G",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--G
+local Section = Tab:AddSection({
+	Name = "G"
 })
 
---h
-
-local Tab = Window:MakeTab({
-	Name = "H",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--H
+local Section = Tab:AddSection({
+	Name = "H"
 })
 
---i
-
-local Tab = Window:MakeTab({
-	Name = "I",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--I
+local Section = Tab:AddSection({
+	Name = "I"
 })
 
---j
-
-local Tab = Window:MakeTab({
-	Name = "J",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--J
+local Section = Tab:AddSection({
+	Name = "J"
 })
 
---k
-
-local Tab = Window:MakeTab({
-	Name = "K",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--K
+local Section = Tab:AddSection({
+	Name = "K"
 })
 
---l
-
-local Tab = Window:MakeTab({
-	Name = "L",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+--L
+local Section = Tab:AddSection({
+	Name = "L"
 })
+
+--M
+local Section = Tab:AddSection({
+	Name = "M"
+})
+
+--N
+local Section = Tab:AddSection({
+	Name = "N"
+})
+
+--O
+local Section = Tab:AddSection({
+	Name = "O"
+})
+
+--P
+local Section = Tab:AddSection({
+	Name = "P"
+})
+
+--Q
+local Section = Tab:AddSection({
+	Name = "Q"
+})
+
+--R
+local Section = Tab:AddSection({
+	Name = "R"
+})
+
+--S
+local Section = Tab:AddSection({
+	Name = "S"
+})
+
+--T
+local Section = Tab:AddSection({
+	Name = "T"
+})
+
+--U
+local Section = Tab:AddSection({
+	Name = "U"
+})
+
+--V
+local Section = Tab:AddSection({
+	Name = "V"
+})
+
+--W
+local Section = Tab:AddSection({
+	Name = "W"
+})
+
+--X
+local Section = Tab:AddSection({
+	Name = "X"
+})
+
+--Y
+local Section = Tab:AddSection({
+	Name = "Y"
+})
+
+--Z
+local Section = Tab:AddSection({
+	Name = "Z"
+		
+})
+OrionLib:Init()
