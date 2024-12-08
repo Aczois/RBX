@@ -24,6 +24,10 @@ function MakeScriptHub()
 })
 end
 
+local Section = Tab:AddSection({
+	Name = "1"
+})
+
 Tab:AddButton({
 	Name = "Yaftfem",
 	Callback = function()
