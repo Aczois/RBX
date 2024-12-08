@@ -22,9 +22,8 @@ function MakeScriptHub()
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-end
 
-local Section = Tab:AddSection({
+	local Section = Tab:AddSection({
 	Name = "1"
 })
 
@@ -34,6 +33,7 @@ Tab:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/FleeTheFacility"))()
   	end    
 })
+end
 
 --Not Code
 
