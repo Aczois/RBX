@@ -4,7 +4,7 @@ local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, Sa
 
 OrionLib:MakeNotification({
 	Name = "Logged In!",
-	Content = "You are logged in as "..Player.Name..,
+	Content = "You are logged in as "..Player.Name.. " ",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
