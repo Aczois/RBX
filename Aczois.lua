@@ -12,9 +12,19 @@ OrionLib:MakeNotification({
 _G.Key = "Aczois6292"
 _G.KeyInput = "string"
 
+--Code
+
 function MakeScriptHub()
 	local Window = OrionLib:MakeWindow({Name = "Aczois Hub", HidePremium = false, SaveConfig = true, IntroText = "by Aczois"})
+
+	local Tab = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 end
+
+--Not Code
 
 function CorrectKeyNotifiction()
 	OrionLib:MakeNotification({
