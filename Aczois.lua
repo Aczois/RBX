@@ -24,7 +24,7 @@ function MakeScriptHub()
 })
 
 	local Section = Tab:AddSection({
-	Name = "Flee The Facility"
+	Name = "💀Flee the Facility🌹"
 })
 
 Tab:AddButton({
