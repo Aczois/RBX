@@ -13,7 +13,7 @@ _G.Key = "Aczois6292"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-	print("Entered Correct Key!")
+	print("EnteredCorrectKey!")
 end
 
 local Tab = Window:MakeTab({
@@ -39,5 +39,3 @@ Tab:AddButton({
   		end    
 	end
 })
-
-	
