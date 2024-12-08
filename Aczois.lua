@@ -4,10 +4,13 @@ local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, Sa
 
 OrionLib:MakeNotification({
 	Name = "Logged In!",
-	Content = "You are logged in as "..Player.Name.. " ",
+	Content = "You are logged in as "..Player.Name.. ".",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+
+_G.Key = "Aczois6292"
+_G.KeyInput = "string"
 
 local Tab = Window:MakeTab({
 	Name = "Key",
@@ -15,3 +18,12 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddTextbox({
+	Name = "Enter Key.",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+		print("KeyInput")
+	end	  
+})
