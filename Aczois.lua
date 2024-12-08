@@ -16,6 +16,15 @@ function MakeScriptHub()
 	print("EnteredCorrectKey!")
 end
 
+function CorrectKeyNotifiction()
+	OrionLib:MakeNotification({
+		Name = "Corect Key!",
+		Content = "You have entered the correct key!",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
+end
+
 local Tab = Window:MakeTab({
 	Name = "Key",
 	Icon = "rbxassetid://4483345998",
@@ -36,6 +45,7 @@ Tab:AddButton({
 	Callback = function()
       		if _G.KeyInput == _G.Key then
 		MakeScriptHub()
+		CorrectKeyNotification()
   		end    
 	end
 })
