@@ -55,7 +55,7 @@ Tab:AddButton({
 	Callback = function()
       		if _G.KeyInput == _G.Key then
 		MakeScriptHub()
-		CorrectKeyNotification()
+		CorrectKeyNotification() then
 		OrionLib:Destroy()
 		else
 			IncorrectKeyNotification()
