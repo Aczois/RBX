@@ -18,19 +18,30 @@ function MakeScriptHub()
 	local Window = OrionLib:MakeWindow({Name = "Aczois Hub", HidePremium = false, SaveConfig = true, IntroText = "by Aczois"})
 
 	local Tab = Window:MakeTab({
-	Name = "Flee The Facility",
+	Name = "A-M",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 	local Section = Tab:AddSection({
-	Name = "1"
+	Name = "Flee The Facility"
 })
 
 Tab:AddButton({
 	Name = "Yaftfem",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/FleeTheFacility"))()
+  	end    
+})
+
+	local Section = Tab:AddSection({
+	Name = "Game Store Tycoon 🎮"
+})
+	
+Tab:AddButton({
+	Name = "Get $10,000",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/GameStoreTycoon"))()
   	end    
 })
 --Stay Above Line
