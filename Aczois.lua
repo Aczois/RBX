@@ -24,6 +24,13 @@ Tab:AddTextbox({
 	TextDisappear = true,
 	Callback = function(Value)
 		_G.KeyInput = Value
-		print("KeyInput")
 	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key!",
+	Callback = function()
+      		if _G.KeyInput == _G.Key then
+				loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Hub2.lua'))()
+  	end    
 })
