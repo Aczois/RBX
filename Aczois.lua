@@ -18,11 +18,18 @@ function MakeScriptHub()
 	local Window = OrionLib:MakeWindow({Name = "Aczois Hub", HidePremium = false, SaveConfig = true, IntroText = "by Aczois"})
 
 	local Tab = Window:MakeTab({
-	Name = "Games",
+	Name = "Flee The Facility",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 end
+
+Tab:AddButton({
+	Name = "Yaftfem",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/FleeTheFacility"))()
+  	end    
+})
 
 --Not Code
 
