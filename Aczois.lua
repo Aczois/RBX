@@ -13,7 +13,7 @@ _G.Key = "Aczois6292"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-	print("EnteredCorrectKey!")
+	local Window = OrionLib:MakeWindow({Name = "Aczois Hub", HidePremium = false, SaveConfig = true, IntroText = "by Aczois"})
 end
 
 function CorrectKeyNotifiction()
