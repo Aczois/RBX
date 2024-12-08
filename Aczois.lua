@@ -12,6 +12,10 @@ OrionLib:MakeNotification({
 _G.Key = "Aczois6292"
 _G.KeyInput = "string"
 
+function MakeScriptHub()
+	print("Entered Correct Key!")
+end
+
 local Tab = Window:MakeTab({
 	Name = "Key",
 	Icon = "rbxassetid://4483345998",
@@ -31,7 +35,9 @@ Tab:AddButton({
 	Name = "Check Key!",
 	Callback = function()
       		if _G.KeyInput == _G.Key then
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Hub2.lua'))()
+		MakeScriptHub()
   		end    
 	end
 })
+
+	
