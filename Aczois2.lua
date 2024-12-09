@@ -133,10 +133,8 @@ Tab:AddToggle({
    end,
 })
 
-local Tab = Window:MakeTab({
-	Name = "ESP",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Section = Tab:AddSection({
+	Name = "ESP"
 })
 
 Tab:AddToggle({
