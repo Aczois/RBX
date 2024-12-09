@@ -116,3 +116,45 @@ Tab:AddToggle({
        end
    end,  
 })
+
+Tab:AddToggle({
+	Name = "Never Slow",
+	Default = false,
+	Callback = function(Value)
+		 NoSlow = state
+       if NoSlow then
+           WalkSpeedBypass()
+           while wait(.5) and NoSlow do
+               if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed < 16 then
+                    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+               end
+           end
+       end
+   end,
+})
+
+local Tab = Window:MakeTab({
+	Name = "ESP",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Player ESP",
+	Default = false,
+	Callback = function(Value)
+		 PlayerEsp = state
+       if PlayerEsp then
+          CreateEsp()
+          while wait() and PlayerEsp do
+            UpdateEsp()
+          end
+       else
+         for _, x in pairs(workspace:GetDescendants()) do
+           if x:IsA('Highlight') and x.Name == 'EspPlayer' then
+             x:Destroy()
+           end
+         end
+       end
+   end,
+})
