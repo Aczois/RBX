@@ -1,87 +1,118 @@
+-- Variables
+local ESP = Instance.new(
+    "Folder",
+    workspace
+) ESP.Name = "ESP"
+local ESPPC = Instance.new(
+    "Folder",
+    workspace
+) ESPPC.Name = "ESPComputer"
+function GetSizeOfObject(Obj)
+    if Obj:IsA("BasePart") then
+        return Obj.Size
+    elseif Obj:IsA("Model") then
+        return Obj:GetExtentsSize()
+    end
+end
+function CreateESPPart(BodyPart,r,g,b)
+    local ESPPartparent = BodyPart
+    local Box = Instance.new("BoxHandleAdornment")
+    Box.Size = GetSizeOfObject(ESPPartparent) + Vector3.new(0.1, 0.1, 0.1)
+    Box.Name = "ESPPart"
+    Box.Adornee = ESPPartparent
+    Box.Color3 = Color3.fromRGB(r,g,b)
+    Box.AlwaysOnTop = true
+    Box.ZIndex = 5
+    Box.Transparency = 0.4
+    Box.Parent = ESP
+    if BodyPart.Parent.Name == game.Players.LocalPlayer.Name then
+        Box:remove()
+        spawn (function()
+            while true do
+                wait(0.1)
+                if BodyPart ~= nil then
+                    Box:remove()
+                end
+            end
+        end)
+    end
+end
+local OldNameCall = nil
+OldNameCall = hookmetamethod(game, "__namecall", function(...)
+    local Args = {...}
+    local Self = Args[1]
+    if getnamecallmethod() == "FireServer" and tostring(Self) == "RemoteEvent" and Args[1] == "ReportPhysicsFPS" then
+        return wait(math.huge)
+    end
+    return OldNameCall(...)
+end)
+local function WalkSpeedBypass()
+  local gmt = getrawmetatable(game)
+  setreadonly(gmt, false)
+  local oldIndex = gmt.__Index
+  gmt.__Index = newcclosure(function(self, b)
+    if b == 'WalkSpeed' then
+      return 16
+    end
+    return oldIndex(self, b)
+  end)
+end
+local BeastColor = Color3.new(255, 0, 0)
+local InoccentColor = Color3.new(255, 255, 255)
+local CreateEsp = function()
+  for _, v in pairs(game:GetService('Players'):GetChildren()) do
+    if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+      local Esp = Instance.new('Highlight', v.Character)
+      Esp.Name = 'EspPlayer'
+      Esp.FillTransparency = 0.5
+    end
+  end
+end
+local UpdateEsp = function()
+  for _, v in pairs(game:GetService('Players'):GetChildren()) do
+    if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+      if v.Character:findFirstChild('BeastPowers') then
+        v.Character.EspPlayer.FillColor = BeastColor
+      else
+        v.Character.EspPlayer.FillColor = InoccentColor
+      end
+    end
+  end
+end
+local Map = workspace:FindFirstChild(tostring(game.ReplicatedStorage.CurrentMap.Value))
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+local plr = game:GetService("Players").LocalPlayer
+local chr = plr.Character
+local hum = chr.Humanoid
+local hrp = chr.HumanoidRootPart
+
+-- Library
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Open = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextLabel = Instance.new("TextLabel")
-local UIListLayout = Instance.new("UIListLayout")
-local Frame_2 = Instance.new("Frame")
-local UIGridLayout = Instance.new("UIGridLayout")
-local PCs = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local UIPadding = Instance.new("UIPadding")
-local Pods = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local UIPadding_2 = Instance.new("UIPadding")
-local Exits = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local UIPadding_3 = Instance.new("UIPadding")
-local Players = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local UIPadding_4 = Instance.new("UIPadding")
-local UIPadding_5 = Instance.new("UIPadding")
-local TextLabel_2 = Instance.new("TextLabel")
-local Frame_3 = Instance.new("Frame")
-local UIGridLayout_2 = Instance.new("UIGridLayout")
-local AntiFail = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local UIPadding_6 = Instance.new("UIPadding")
-local UIPadding_7 = Instance.new("UIPadding")
-local PlayerLight = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local UIPadding_8 = Instance.new("UIPadding")
-local WalkSpeed = Instance.new("Frame")
-local TextBox = Instance.new("TextBox")
-local UICorner_9 = Instance.new("UICorner")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local TextButton = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local UIPadding_9 = Instance.new("UIPadding")
-local UnlockAll = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local Notification = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
-local UIPadding_10 = Instance.new("UIPadding")
-local ReloadESP = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local TextLabel_6 = Instance.new("TextLabel")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
 local Window = OrionLib:MakeWindow({Name = "Aczois Flee the Facility", HidePremium = false, SaveConfig = true, ConfigFolder = "Aczois6292FtF"})
 
 local Tab = Window:MakeTab({
-	Name = "FtF",
+	Name = "Farming",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = "ESP"
+	Name = "Farming"
 })
 
-Tab:AddButton({
-	Name = "PCS",
-	Callback = function()
-      		PCs.Name = "PCs"
-PCs.Parent = Frame_2
-PCs.AnchorPoint = Vector2.new(0.5, 0.5)
-PCs.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-PCs.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PCs.BorderSizePixel = 0
-PCs.Position = UDim2.new(0.0450000018, 0, 0.112000003, 0)
-PCs.Size = UDim2.new(0, 200, 0, 50)
-PCs.AutoButtonColor = false
-PCs.Font = Enum.Font.Gotham
-PCs.Text = "PCs"
-PCs.TextColor3 = Color3.fromRGB(255, 255, 255)
-PCs.TextScaled = true
-PCs.TextSize = 14.000
-PCs.TextWrapped = true
-  	end    
+Tab:AddToggle({
+	Name = "Never Fail Hacking",
+	Default = false,
+	Callback = function(Value)
+		NeverFallHack = state
+       if NeverFallHack then
+           while wait() and NeverFallHack do
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(
+                    "SetPlayerMinigameResult",
+                    true
+                )
+           end
+       end
+   end,  
 })
