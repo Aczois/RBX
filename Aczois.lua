@@ -18,6 +18,14 @@ function MakeScriptHub()
 	local Window = OrionLib:MakeWindow({Name = "Aczois Hub", HidePremium = false, SaveConfig = true, IntroText = "by Aczois"})
 
 	local Tab = Window:MakeTab({
+	Name = "About Creator",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Introduction","Hey, I'm Aczois and I hope to one day learn .lua coding and become a major part of the Roblox scripting scene. This script is just a shortcut to other scripts which I hope to make scripts of my own one day.")
+	
+	local Tab = Window:MakeTab({
 	Name = "A-M",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
