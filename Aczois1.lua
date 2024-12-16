@@ -8,10 +8,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = "Simple"
-})
-
 Tab:AddButton({
 	Name = "Get Food",
 	Callback = function()
@@ -19,4 +15,4 @@ Tab:AddButton({
   	end    
 })
 
-OrionLib:Destroy()
+	OrionLib:Destroy()
