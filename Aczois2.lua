@@ -81,6 +81,5 @@ end
 
 -- Finally, teleport to TheEnd
 teleportCharacterTo(Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger) 
-
-	end    
+	repeat  
 })
