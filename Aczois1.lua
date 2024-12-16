@@ -14,5 +14,3 @@ Tab:AddButton({
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/SCP%203008%20Food'))()
   	end    
 })
-
-	OrionLib:Destroy()
