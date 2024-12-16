@@ -1,35 +1,88 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+--[[ Settings ]]
+local TimesToTeleport = 50
+local Radius = 100
 
-local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window",
-   Icon = 0,
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+--[[ Variables ]]
+local PS = game:GetService("Players")
+local WS = game:GetService("Workspace")
+local Player = PS.LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+local Character = PS.LocalPlayer.Character or PS.LocalPlayer.CharacterAdded:Wait()
+local Backpack = Player:WaitForChild("Backpack")
+local HumanoidRoot = Character:WaitForChild("HumanoidRootPart")
+local ItemsFolder = WS:WaitForChild("GameObjects").Physical.Items
+local Storage = PlayerGui:WaitForChild("MainGui").Menus.Inventory
 
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+--[[ Remotes ]]
+local Pickup  = Character.System.Action
 
-   ConfigurationSaving = {
-      Enabled = true,
-      FolderName = Aczois6292,
-      FileName = "Aczois Hub"
-   },
 
-   Discord = {
-      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
-      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
-   },
+local OldCFrame = HumanoidRoot.CFrame 
+local OldPosition = HumanoidRoot.Position 
 
-   KeySystem = true,
-   KeySettings = {
-      Title = "Aczois",
-      Subtitle = "Key System",
-      Note = "Complete the Lootlink For Key!", -- Use this to tell the user how to get a key
-      FileName = "Aczois6292Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"https://lootdest.org/s?f5f3e1c3"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
-   }
-})
+function Check(Object)
+	if Object.Name == "Crowbar" then
+		return false
+	end
+	if Object:FindFirstChildOfClass("Part") or Object:FindFirstChildOfClass("MeshPart") then
+		local Part = Object:FindFirstChildOfClass("Part") or Object:FindFirstChildOfClass("MeshPart")
+		local Distance = (OldPosition - Part.Position).magnitude
+		if Distance < Radius then
+			return false
+		end
+		return true, Part
+	end
+	return false
+end
+
+function InvetoryCheck()
+	local StorageAmount = Storage.UpperLine.Storage
+	if StorageAmount.Text == "16/16 items" or StorageAmount.Text == "17/16 items" then
+		HumanoidRoot.CFrame = OldCFrame
+		wait()
+		for i,v in pairs(Backpack:GetChildren()) do
+			
+			local A_1 = "Inventory_DropAll"
+			local A_2 = 
+				{
+					["Tool"] = v.Name
+				}
+			Pickup:InvokeServer(A_1, A_2)
+
+		end
+		repeat task.wait() until StorageAmount.Text == "0/16 items"
+	end
+	return "Done"
+end
+
+local Amount = 0
+for i,v in pairs(WS:GetDescendants()) do
+	if v.Name == "Apple" or v.Name == "Banana" or v.Name == "Bloxy Soda" or v.Name == "Burger" or v.Name == "Cookie" or v.Name == "Dr. Bob Soda" or v.Name == "Hotdog" or v.Name == "Ice Cream" or v.Name == "Lemon" or v.Name == "Lemon Slice" or v.Name == "Medkit" or v.Name == "Pizza" or v.Name == "Water" or v.Name == "2 Litre Dr. Bob" then         --trollll
+		if v:FindFirstChild(v.Name) or v:FindFirstChild("Root") then
+			local Bool, Part = Check(v)
+			if Bool then
+				Amount = Amount + 1
+				if Amount >= TimesToTeleport then
+					HumanoidRoot.CFrame = OldCFrame
+					return;
+				else
+					repeat task.wait()
+						repeat task.wait() until InvetoryCheck() == "Done"
+						Bool, Part = Check(v)
+						if Part ~= nil then
+							HumanoidRoot.CFrame = Part.CFrame 
+							
+							local A_1 = "Store"
+							local A_2 = 
+								{
+									["Model"] = v
+								}
+					
+							Pickup:InvokeServer(A_1, A_2)
+						end
+					until Part == nil
+				end
+			end
+		end	
+	end
+end
