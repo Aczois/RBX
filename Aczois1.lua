@@ -1,9 +1,9 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
 
-local Window = OrionLib:MakeWindow({Name = "Aczois Unsimplified", HidePremium = false, SaveConfig = true, ConfigFolder = "Aczois1TEst6292"})
+local Window = OrionLib:MakeWindow({Name = "Aczois Unsimplified", HidePremium = false, SaveConfig = true, ConfigFolder = "Aczois1Test6292"})
 
 local Tab = Window:MakeTab({
-	Name = "SCP 3008",
+	Name = "SCP3008",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -15,7 +15,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Get Food",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://github.com/Aczois/RBX/blob/main/Safe/SCP%203008%20Food'))()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/SCP%203008%20Food'))()
   	end    
 })
 
