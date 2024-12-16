@@ -1,3 +1,4 @@
+--
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
 local Player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroText = "Key System"})
@@ -24,6 +25,13 @@ function MakeScriptHub()
 })
 
 Tab:AddParagraph("Introduction","Hey, I'm Aczois and I hope to one day learn .lua coding and become a major part of the Roblox scripting scene. This script is just a shortcut to other scripts which I hope to make scripts of my own one day.")
+
+Tab:AddButton({
+	Name = "2nd Menu!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Aczois1.lua"))()
+  	end    
+})
 	
 	local Tab = Window:MakeTab({
 	Name = "A-M",
