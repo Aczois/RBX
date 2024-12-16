@@ -1,5 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Window = OrionLib:MakeWindow({Name = "Aczois Unsimplified", HidePremium = false, SaveConfig = true, ConfigFolder = "Aczois1TEst6292"})
 
 local Tab = Window:MakeTab({
 	Name = "SCP 3008",
