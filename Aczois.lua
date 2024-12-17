@@ -40,6 +40,17 @@ Tab:AddButton({
 })
 
 	local Section = Tab:AddSection({
+	Name = "Build A Boat For Teasure"
+})
+
+Tab:AddButton({
+	Name = "Get Trasure",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/BuildABoatAuto"))()
+  	end    
+})
+	
+	local Section = Tab:AddSection({
 	Name = "💀Flee the Facility🌹"
 })
 
