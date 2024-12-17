@@ -7,6 +7,10 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Section = Tab:AddSection({
+	Name = "Cool Stuff"
+})
+
 Tab:AddButton({
 	Name = "Get A LOT of Food!",
 	Callback = function()
