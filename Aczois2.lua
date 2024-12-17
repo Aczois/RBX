@@ -13,7 +13,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/BuildABoatAuto'))()
+      		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/BuildABoatAuto"))()
   	end    
 })
 		
