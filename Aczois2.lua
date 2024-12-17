@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
 local Window = OrionLib:MakeWindow({Name = "Aczois Build A Boat For Treasure", HidePremium = false, SaveConfig = true, ConfigFolder = "AczoisBABFT"})
-local clock = os.clock
+
 local Tab = Window:MakeTab({
 	Name = "Usage",
 	Icon = "rbxassetid://4483345998",
@@ -11,10 +11,9 @@ local Section = Tab:AddSection({
 	Name = "Auto-Farm"
 })
 
-Tab:AddToggle({
-	Name = "Autofarm",
-	Default = false,
-	Callback = function(Value)
+Tab:AddButton({
+	Name = "Auto-Farm",
+	Callback = function()
 		-- Get the services we need
 local TweenService = game:GetService("TweenService")
 local Workspace = game:GetService("Workspace")
@@ -81,8 +80,7 @@ end
 
 -- Finally, teleport to TheEnd
 teleportCharacterTo(Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger) 
-			function sleep(10)  -- seconds
-   local t0 = clock()
-   while clock() - t0 <= n do
-	repeat  
+				end
+			end
+		end
 })
