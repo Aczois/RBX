@@ -40,7 +40,7 @@ Tab:AddButton({
 })
 
 	local Section = Tab:AddSection({
-	Name = "Build A Boat For Teasure"
+	Name = "Build A Boat For Treasure"
 })
 
 Tab:AddButton({
