@@ -11,6 +11,6 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Get Food",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/SCP%203008%20Food'))()
+      		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/SCP%203008%20Food"))()
   	end    
 })
