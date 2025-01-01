@@ -2,6 +2,12 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Acz
 
 local Window = OrionLib:MakeWindow({Name = "Aczois Defined", HidePremium = false, SaveConfig = true, ConfigFolder = "AczoisDefined6292"})
 
+local Players = game:GetService("Players")
+local TextBox = -- Path to your TextBox object
+local function TeleportToPlayer(playerName)
+    local targetPlayer = Players:FindFirstChild(playerName)
+
+	
 local Tab = Window:MakeTab({
 	Name = "Universal",
 	Icon = "rbxassetid://4483345998",
@@ -15,13 +21,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Tween To Any Player",
 	Callback = function()
-      		local Players = game:GetService("Players")
-local TextBox = -- Path to your TextBox object
-
-local function TeleportToPlayer(playerName)
-    local targetPlayer = Players:FindFirstChild(playerName)
-
-    if targetPlayer then
+		 if targetPlayer then
         local character = targetPlayer.Character
         local localPlayer = Players.LocalPlayer
         local localCharacter = localPlayer.Character
