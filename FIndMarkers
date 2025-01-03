@@ -1,5 +1,7 @@
+--Important
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
 local Window = OrionLib:MakeWindow({Name = "Find The Memes", HidePremium = false, SaveConfig = true, ConfigFolder = "MemeAczois6292"})
+--AUtomatic
 local Tab = Window:MakeTab({
 	Name = "Auto",
 	Icon = "rbxassetid://4483345998",
@@ -11,6 +13,7 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
+--Noob Manual
 local Tab = Window:MakeTab({
 	Name = "Noob",
 	Icon = "rbxassetid://4483345998",
@@ -19,7 +22,7 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "61/62"
 })
-
+--1. Shrek 
 Tab:AddButton({
 	Name = "1. Shrek",
 	Callback = function()
