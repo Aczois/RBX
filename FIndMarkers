@@ -1,0 +1,71 @@
+-- #1 Shrek
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-622.3125, 45.2038918, 355.078979, 0.983960927, -6.08051494e-08, 0.178383961, 4.22934079e-08, 1, 1.07577399e-07, -0.178383961, -9.83074955e-08, 0.983960927)
+wait(0.5)
+
+-- #2 Sussy Face
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-544.772461, 45.2038918, 295.196869, -0.0342655778, 1.00451139e-07, -0.999412775, 4.81328666e-09, 1, 1.00345133e-07, 0.999412775, -1.3720759e-09, -0.0342655778)
+wait(0.5)
+
+-- #3 Tyler The Creator
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-635.198975, 68.196312, 275.890533, 0.999247134, -4.45572823e-09, 0.0387962982, 5.9924079e-09, 1, -3.94926403e-08, -0.0387962982, 3.96953901e-08, 0.999247134)
+wait(0.5)
+
+-- #4 Cavebob
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-509.101807, 45.9981308, 218.448837, 0.62679404, 3.20998783e-09, -0.779184937, -4.63902605e-09, 1, 3.87936044e-10, 0.779184937, 3.37150308e-09, 0.62679404)
+wait(0.5)
+
+-- #5 Ben
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-664.138, -26.8710938, 385.576477, -0.108755611, -2.08385735e-08, -0.994068503, -8.22136528e-08, 1, -1.19683685e-08, 0.994068503, 8.04243712e-08, -0.108755611)
+wait(0.5)
+
+-- #6 Meg Griffin
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-85.619606, 49.3108139, 244.4888, 0.789625108, -6.03574577e-08, -0.613589585, 2.07154649e-08, 1, -7.17091808e-08, 0.613589585, 4.39125785e-08, 0.789625108)
+wait(0.5)
+
+-- #7 Ye
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-705.884094, 58.3840675, 902.412354, -0.689370632, 9.09998974e-08, 0.724408805, 6.99543747e-08, 1, -5.90487126e-08, -0.724408805, 9.96911886e-09, -0.689370632)
+wait(0.5)
+
+-- #8 Like Emoji
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-544.660706, 60.4979095, 1001.47241, 0.211008027, -6.31963237e-09, -0.977484345, -6.74137226e-08, 1, -2.1017696e-08, 0.977484345, 7.03307634e-08, 0.211008027)
+wait(0.5)
+
+-- #9 Bart
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-618.882629, 118.198112, 253.523804, -0.94595927, -9.37205513e-08, 0.324285388, -8.35545038e-08, 1, 4.52730617e-08, -0.324285388, 1.57309668e-08, -0.94595927)
+wait(0.5)
+
+-- #10 Noob
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-805.09906, 49.3080215, 269.137421, -0.101823807, -6.59841035e-08, -0.994802475, 4.06282012e-08, 1, -7.04873813e-08, 0.994802475, -4.75943267e-08, -0.101823807)
+wait(0.5)
+
+-- #11 TV Man
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-656.441345, 45.2038918, 337.958984, -0.999910593, 3.31411094e-08, -0.0133703826, 3.41434472e-08, 1, -7.47386721e-08, 0.0133703826, -7.51885025e-08, -0.999910593)
+wait(0.5)
+
+-- #12 Bacon Hair
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-494.138824, 51.657917, 802.380371, 0.983129025, 1.58084532e-08, -0.182913318, 1.25284089e-10, 1, 8.70993091e-08, 0.182913318, -8.56527791e-08, 0.983129025)
+wait(0.5)
+
+-- #13 Zombies
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-507.008331, 61.7867928, 897.847961, -0.821028352, 3.59851349e-08, 0.570887446, 1.54219979e-08, 1, -4.08543528e-08, -0.570887446, -2.47383571e-08, -0.821028352)
+wait(0.5)
+
+-- #14 Your Mom
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-787.091064, 63.6711617, 500.373016, -0.302006572, 0.107799575, -0.947191238, 0.0081200283, 0.993840754, 0.110519715, 0.95327127, 0.0256864596, -0.301021755)
+wait(0.5)
+
+-- #15 Crazy Emoji
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-623.674255, 39.3980217, 433.690613, -0.794268429, -2.95177234e-08, 0.607567012, -4.23811786e-09, 1, 4.30430198e-08, -0.607567012, 3.16127711e-08, -0.794268429)
+wait(0.5)
+
+-- #16 Bing Chilling
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-472.991638, 79.2599258, 995.000732, 0.581181228, 1.27749289e-09, -0.813774168, -4.89737317e-08, 1, -3.34062236e-08, 0.813774168, 5.92686256e-08, 0.581181228)
+wait(0.5)
+
+-- #17 Anime Girl
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-15.9508247, 49.3108139, 467.763336, -0.766931117, -5.00170643e-08, -0.641729414, 2.45703564e-08, 1, -1.07305091e-07, 0.641729414, -9.80631327e-08, -0.766931117)
+wait(0.5)
+
+-- #18 Doge
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-94.605484, 54.5583, 361.478271, 0.112102374, -5.04538207e-08, 0.99369669, 1.8922055e-08, 1, 4.86392011e-08, -0.99369669, 1.33502134e-08, 0.112102374)
+wait(0.5)
