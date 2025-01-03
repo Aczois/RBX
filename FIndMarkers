@@ -47,7 +47,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-494.13882
 wait(0.5)
 
 -- #13 Zombies
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-507.008331, 61.7867928, 897.847961, -0.821028352, 3.59851349e-08, 0.570887446, 1.54219979e-08, 1, -4.08543528e-08, -0.570887446, -2.47383571e-08, -0.821028352)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-506.736969, 67.0743713, 900.515625, 0.302670211, 0.0600429364, -0.951202154, -0.0348552912, 0.998043358, 0.051908832, 0.952457786, 0.0174431726, 0.304170817)
 wait(0.5)
 
 -- #14 Your Mom
