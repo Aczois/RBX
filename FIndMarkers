@@ -17,3 +17,11 @@ Tab:AddButton({
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-622.3125, 45.2038918, 355.078979, 0.983960927, -6.08051494e-08, 0.178383961, 4.22934079e-08, 1, 1.07577399e-07, -0.178383961, -9.83074955e-08, 0.983960927)
   	end    
 })
+
+--2. Sussy Face
+Tab:AddButton({
+	Name = "2. Sussy Face",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-544.772461, 45.2038918, 295.196869, -0.0342655778, 1.00451139e-07, -0.999412775, 4.81328666e-09, 1, 1.00345133e-07, 0.999412775, -1.3720759e-09, -0.0342655778)
+  	end    
+})
