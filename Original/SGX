@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
 
-local Window = OrionLib:MakeWindow({Name = "Squid Game X - Aczois", HidePremium = false, SaveConfig = true, ConfigFolder = "SGXaczois6292b11"})
+local Window = OrionLib:MakeWindow({Name = "Squid Game X", HidePremium = false, SaveConfig = true, ConfigFolder = "SGXaczois6293"})
 
 local Tab = Window:MakeTab({
     Name = "Simple",
