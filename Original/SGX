@@ -1,1 +1,20 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
 
+local Window = OrionLib:MakeWindow({Name = "Squid Game X - Aczois", HidePremium = false, SaveConfig = true, ConfigFolder = "SGXaczois6292b11"})
+
+local Tab = Window:MakeTab({
+    Name = "Simple",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "Red Light Green Light"
+})
+
+Tab:AddButton({
+    Name = "Win!",
+    Callback = function()
+         
+      end    
+})
