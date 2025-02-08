@@ -8,9 +8,11 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("Name a food that starts with the letter P","Passion Fruit")
 Tab:AddParagraph("Name a topping that is usually on a hamburger","American Cheese")
 Tab:AddParagraph("Name a type of transport","Underground Funicular")
 Tab:AddParagraph("Name a type of weather","Thunderstorm")
+Tab:AddParagraph("Name one of the seven colors of the rainbow","Purple")
 Tab:AddParagraph("Name something you can eat with","Ice Cream Spoon")
 Tab:AddParagraph("Name something you do in your sleep","Sleep Paralysis")
 Tab:AddParagraph("Name something you find on pizza","Mozzarella Cheese")
