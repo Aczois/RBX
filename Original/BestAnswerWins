@@ -1,1 +1,11 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
 
+local Window = OrionLib:MakeWindow({Name = "Answer or Die", HidePremium = false, SaveConfig = true, ConfigFolder = "AnswerOrDie6292"})
+
+local Tab = Window:MakeTab({
+	Name = "N",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Name A Type of Transport","Bullet Train ❌")
