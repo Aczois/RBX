@@ -8,6 +8,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("Name a topping that is usually on a hamburger","American Cheese")
 Tab:AddParagraph("Name a type of transport","Underground Funicular")
 Tab:AddParagraph("Name a type of weather","Thunderstorm")
 Tab:AddParagraph("Name something you can eat with","Ice Cream Spoon")
