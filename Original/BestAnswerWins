@@ -8,4 +8,14 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Name A Type of Transport","Bullet Train /X/")
+Tab:AddParagraph("Name a type of transport","")
+Tab:AddParagraph("Name something you can eat with","Ice Cream Spoon")
+Tab:AddParagraph("Name a type of weather","Thunderstorm")
+
+local Tab = Window:MakeTab({
+	Name = "W",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("What is something you can sit on ","Rocking Chair")
