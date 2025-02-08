@@ -8,9 +8,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Name a type of transport","")
-Tab:AddParagraph("Name something you can eat with","Ice Cream Spoon")
+Tab:AddParagraph("Name a type of transport","Underground Funicular")
 Tab:AddParagraph("Name a type of weather","Thunderstorm")
+Tab:AddParagraph("Name something you can eat with","Ice Cream Spoon")
 
 local Tab = Window:MakeTab({
 	Name = "W",
