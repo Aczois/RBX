@@ -8,4 +8,4 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("Name A Type of Transport","Bullet Train ❌")
+Tab:AddParagraph("Name A Type of Transport","Bullet Train /X/")
