@@ -12,6 +12,8 @@ Tab:AddParagraph("Name a topping that is usually on a hamburger","American Chees
 Tab:AddParagraph("Name a type of transport","Underground Funicular")
 Tab:AddParagraph("Name a type of weather","Thunderstorm")
 Tab:AddParagraph("Name something you can eat with","Ice Cream Spoon")
+Tab:AddParagraph("Name something you do in your sleep","Sleep Paralysis")
+Tab:AddParagraph("Name something you find on pizza","Mozzarella Cheese")
 
 local Tab = Window:MakeTab({
 	Name = "W",
