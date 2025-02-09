@@ -1,2 +1,3 @@
-if place.id == 
+if place.id == 7559074529
+then loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/SquidGameX"))()
 elseif place.id ==
