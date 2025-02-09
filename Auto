@@ -21,84 +21,16 @@ elseif game.PlaceId == 11966456877 then
         warn("Error loading AnswerOrDie script: " .. scriptFunction) -- Print the error message
     end
 ------------------------------------------------UNKNOWN
-elseif game.PlaceId == (PlaceIdNumber) then
+elseif game.PlaceId == PlaceIdNumber then
     local success, scriptFunction = pcall(function()
-        return loadstring(game:HttpGet("(RawGithubLink)"))
+        return loadstring(game:HttpGet("RawGithubLink"))
     end)
 
     if success then
         scriptFunction()
     else
-        warn("Error loading (LastWOrdInGithubLink) script: " .. scriptFunction) -- Print the error message
+        warn("Error loading LastWOrdInGithubLink script: " .. scriptFunction) -- Print the error message
     end
-------------------------------------------------UNKNOWN
-elseif game.PlaceId == (PlaceIdNumber) then
-    local success, scriptFunction = pcall(function()
-        return loadstring(game:HttpGet("(RawGithubLink)"))
-    end)
-
-    if success then
-        scriptFunction()
-    else
-        warn("Error loading (LastWOrdInGithubLink) script: " .. scriptFunction) -- Print the error message
-    end
-------------------------------------------------UNKNOWN
-elseif game.PlaceId == (PlaceIdNumber) then
-    local success, scriptFunction = pcall(function()
-        return loadstring(game:HttpGet("(RawGithubLink)"))
-    end)
-
-    if success then
-        scriptFunction()
-    else
-        warn("Error loading (LastWOrdInGithubLink) script: " .. scriptFunction) -- Print the error message
-    end
-------------------------------------------------UNKNOWN
-elseif game.PlaceId == (PlaceIdNumber) then
-    local success, scriptFunction = pcall(function()
-        return loadstring(game:HttpGet("(RawGithubLink)"))
-    end)
-
-    if success then
-        scriptFunction()
-    else
-        warn("Error loading (LastWOrdInGithubLink) script: " .. scriptFunction) -- Print the error message
-    end
-------------------------------------------------UNKNOWN
-elseif game.PlaceId == (PlaceIdNumber) then
-    local success, scriptFunction = pcall(function()
-        return loadstring(game:HttpGet("(RawGithubLink)"))
-    end)
-
-    if success then
-        scriptFunction()
-    else
-        warn("Error loading (LastWOrdInGithubLink) script: " .. scriptFunction) -- Print the error message
-    end
-------------------------------------------------UNKNOWN
-elseif game.PlaceId == (PlaceIdNumber) then
-    local success, scriptFunction = pcall(function()
-        return loadstring(game:HttpGet("(RawGithubLink)"))
-    end)
-
-    if success then
-        scriptFunction()
-    else
-        warn("Error loading (LastWOrdInGithubLink) script: " .. scriptFunction) -- Print the error message
-    end
-------------------------------------------------UNKNOWN
-elseif game.PlaceId == (PlaceIdNumber) then
-    local success, scriptFunction = pcall(function()
-        return loadstring(game:HttpGet("(RawGithubLink)"))
-    end)
-
-    if success then
-        scriptFunction()
-    else
-        warn("Error loading (LastWOrdInGithubLink) script: " .. scriptFunction) -- Print the error message
-    end
-------------------------------------------------UNKNOWN
-PlaceHolder
 ------------------------------------------------ETC
 else
     warn("This script is not designed to run in this place.") -- Optional: Handle other place IDs
