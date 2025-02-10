@@ -1,2 +1,6 @@
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(231.480774, 11.0273666, -783.304749, 0.988484085, -1.13632318e-07, -0.151324943, 1.12730937e-07, 1, -1.45354679e-08, 0.151324943, -2.69092437e-09, 0.988484085)
-wait()
+  local player = game.Players.LocalPlayer
+  -- Check if the character exists before trying to access it.
+  if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(231.480774, 11.0273666, -783.304749, 0.988484085, -1.13632318e-07, -0.151324943, 1.12730937e-07, 1, -1.45354679e-08, 0.151324943, -2.69092437e-09, 0.988484085)
+  end
+end
