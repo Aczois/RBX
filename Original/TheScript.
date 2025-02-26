@@ -1,0 +1,127 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DenDenZZZ/Orion-UI-Library/refs/heads/main/source')))()
+
+local Window = OrionLib:MakeWindow({
+    Name = "Universal Script\n - Aczois",
+    HidePremium = false,
+    SaveConfig = false,           
+    ConfigFolder = nil,       
+    IntroEnabled = true,
+    IntroText = "Aczois Hub, " .. game.Players.LocalPlayer.Name,
+    IntroIcon = "rbxassetid://6038458940"
+})
+
+local Tab = Window:MakeTab({
+    Name = "Hide & Seek Extreme",
+    Icon = "rbxassetid://140587862516598",                 
+    PremiumOnly = false
+})
+
+Tab:AddSlider({
+    Name = "Walk Speed",
+    Min = 0,                                              -- Minimum value for the slider
+    Max = 100,                                            -- Maximum value for the slider
+    Default = 16,                                         -- Default value of the slider
+    Color = Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255)),
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value  -- Updates the player's walk speed
+    end
+})
+
+Tab:AddButton({
+	Name = "Get All Coins ✅",
+	Callback = function()
+      		local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+local oldPos = hrp.CFrame
+for _, v in pairs(workspace.GameObjects:GetChildren()) do
+	if v.Name == "Credit" then
+		hrp.CFrame = v.CFrame
+		hrp.Velocity = Vector3.new(0,0,0)
+		wait(0)
+	end
+end
+hrp.CFrame = oldPos
+hrp.Velocity = Vector3.new(0,0,0)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ESP Players✅",
+	Callback = function()
+      		--// Written by depso
+local Players = game:GetService("Players")
+
+local function ApplyHighlight(Player)
+    local Connections = {}
+
+    --// Parts
+    local Character = Player.Character or Player.CharacterAdded:Wait()
+    local Humanoid = Character:WaitForChild("Humanoid")
+    local HightLighter = Instance.new("Highlight", Character)
+
+    local function UpdateFillColor()
+        local DefaultColor = Color3.fromRGB(255, 48, 51)
+        HightLighter.FillColor = (Player.TeamColor and Player.TeamColor.Color) or DefaultColor
+    end
+
+    local function Disconnect()
+        HightLighter:Remove()
+        
+        for _, Connection in next, Connections do
+            Connection:Disconnect()
+        end
+    end
+
+    --// Connect functions to events
+    table.insert(Connections, Player:GetPropertyChangedSignal("TeamColor"):Connect(UpdateFillColor))
+    table.insert(Connections, Humanoid:GetPropertyChangedSignal("Health"):Connect(function()
+        if Humanoid.Health <= 0 then
+            Disconnect()
+        end
+    end))
+end
+
+local function HightLightPlayer(Player)
+    if Player.Character then
+        HightLightPlayer(Player)
+    end
+    Player.CharacterAdded:Connect(function()
+        HightLightPlayer(Player)
+    end)
+end
+
+--// Apply highlights to players
+for _, Player in next, Players:GetPlayers() do
+    ApplyHighlight(Player)
+end
+Players.PlayerAdded:Connect(ApplyHighlight)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Find All",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infinite Jump ✅",
+	Callback = function()
+      		local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "Safe Zone (Experimental) ✅",
+	Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(273.024231, 158.707535, -22.421381, 0.999836445, -5.90072347e-09, -0.0180847328, 6.0280243e-09, 1, 6.98462532e-09, 0.0180847328, -7.09249814e-09, 0.999836445)
+         wait(0.5)
+  	end    
+})
