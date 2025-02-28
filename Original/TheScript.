@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DenDenZZZ/Orion-UI-Library/refs/heads/main/source')))()
 
 local Window = OrionLib:MakeWindow({
-    Name = "Universal Script\n - Aczois",
+    Name = "Aczois",
     HidePremium = false,
     SaveConfig = false,           
     ConfigFolder = nil,       
