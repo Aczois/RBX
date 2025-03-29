@@ -1,21 +1,34 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
+local OrionLib
+local success, result = pcall(function()
+    OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib"))()
+end)
 
-local Window = OrionLib:MakeWindow({Name = "Aczois Automatic Game Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AcAuGaHu6292"})
+if success and OrionLib then
+    local Window = OrionLib:MakeWindow({Name = "Aczois Automatic Game Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AcAuGaHu6292"})
 
-local Tab = Window:MakeTab({
-	Name = "Automatic",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+    local Tab = Window:MakeTab({
+        Name = "Automatic",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
 
-local Section = Tab:AddSection({
-	Name = "Find and Execute"
-})
+    local Section = Tab:AddSection({
+        Name = "Find and Execute"
+    })
 
-Tab:AddButton({
-	Name = "Game",
-	Callback = function()
-      		if game.PlaceId == 205224386 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Original/TheScript."))()
-  	end    
-})
+    Tab:AddButton({
+        Name = "Game",
+        Callback = function()
+            if game.PlaceId == 205224386 then
+                local success2, result2 = pcall(function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Original/TheScript."))()
+                end)
+                if not success2 then
+                    warn("Error loading game script: ", result2)
+                end
+            end
+        end
+    })
+else
+    warn("Error loading OrionLib: ", result)
+end
