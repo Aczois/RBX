@@ -1,1 +1,26 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DenDenZZZ/Orion-UI-Library/refs/heads/main/source')))()
+
+local Window = OrionLib:MakeWindow({
+    Name = "Universal Script\n - Aczois",
+    HidePremium = false,
+    SaveConfig = false,           
+    ConfigFolder = nil,       
+    IntroEnabled = true,
+    IntroText = "Aczois Hub, " .. game.Players.LocalPlayer.Name,
+    IntroIcon = "rbxassetid://6038458940"
+})
+
+local Tab = Window:MakeTab({
+    Name = "Execute",
+    Icon = "rbxassetid://140587862516598",                 
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Find Game And Execute",
+	Callback = function()
+      	if game.PlaceId == 205224386 then	loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Original/TheScript."))()
+--elseif game.PlaceId == nil then
+  	end    
+})
 
