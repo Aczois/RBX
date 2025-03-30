@@ -1,3 +1,5 @@
+while wait() do
+wait(15)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-105.112457, -6.70000648, -574.080322, 0.365992457, -1.55866395e-08, 0.930617809, -1.04166098e-07, 1, 5.77150416e-08, -0.930617809, -1.18062097e-07, 0.365992457)
 wait(0.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-125.892349, -6.70000696, -596.842041, 0.85705775, -6.53844481e-08, -0.515220404, 1.21662449e-08, 1, -1.066675e-07, 0.515220404, 8.51519104e-08, 0.85705775)
@@ -8,3 +10,5 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-82.874633
 wait(0.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-85.3576202, 43.9999962, -554.615662, 0.998271763, 7.94195554e-09, 0.0587663092, -2.16002283e-09, 1, -9.84520767e-08, -0.0587663092, 9.81549917e-08, 0.998271763)
 wait(0.5)
+end
+
