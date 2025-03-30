@@ -3,11 +3,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("DropItem"):FireServer()
 end
 
 while wait() do
-local RemoteEvent = Instance.new("RemoteEvent")
-RemoteEvent.Name = "EquipTool1"
-end
-
-while wait() do
 wait(30)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-105.112457, -6.70000648, -574.080322, 0.365992457, -1.55866395e-08, 0.930617809, -1.04166098e-07, 1, 5.77150416e-08, -0.930617809, -1.18062097e-07, 0.365992457)
 wait(0.5)
