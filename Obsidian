@@ -12,3 +12,6 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-85.357620
 wait(0.5)
 end
 
+while wait() do
+game:GetService("ReplicatedStorage"):WaitForChild("DropItem"):FireServer()
+end
