@@ -3,20 +3,8 @@ game:GetService("ReplicatedStorage"):WaitForChild("DropItem"):FireServer()
 end
 
 while wait() do
--- Create a RemoteEvent to communicate with the client
 local RemoteEvent = Instance.new("RemoteEvent")
 RemoteEvent.Name = "EquipTool1"
-RemoteEvent.Parent = game:GetService("ReplicatedStorage")
-
--- Function to equip the tool
-RemoteEvent.OnServerEvent:Connect(function(player)
-    -- Check if the player has a tool in slot 1
-    local tool = player.Backpack:FindFirstChild("ToolName") -- Replace "ToolName" with the actual tool name
-    if tool then
-        -- Equip the tool
-        player:WaitForChild("Character"):WaitForChild("Humanoid"):EquipTool(tool)
-      end
-  end)
 end
 
 while wait() do
