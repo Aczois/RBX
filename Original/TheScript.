@@ -125,3 +125,16 @@ Tab:AddButton({
          wait(0.5)
   	end    
 })
+
+local Tab = Window:MakeTab({
+    Name = "Natural Disaster Survival",
+    Icon = "rbxassetid://140587862516598",                 
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Safe Zone (Experimental) ✅",
+	Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-321.954376, 179.598038, 329.68689, 0.986015379, -9.66602354e-09, -0.166654244, 9.45864986e-09, 1, -2.03804706e-09, 0.166654244, 4.33221736e-10, 0.986015379)
+         wait(0.5)
+  	end    
