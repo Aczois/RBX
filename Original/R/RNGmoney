@@ -1,0 +1,7 @@
+local args = {
+    [1] = {
+      ["CoarseDirt"] = 1,
+      ["Dirt"] = 2,
+      ["Slate"] = 2000000
+    }
+  }
