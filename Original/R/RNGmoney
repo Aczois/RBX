@@ -1,7 +1,9 @@
 local args = {
     [1] = {
-      ["CoarseDirt"] = 1,
-      ["Dirt"] = 2,
-      ["Slate"] = 2000
+        ["CoarseDirt"] = 1,
+        ["Dirt"] = 2,
+        ["Slate"] = 10000
     }
-  }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):WaitForChild("@rbxts"):WaitForChild("remo"):WaitForChild("src"):WaitForChild("container"):WaitForChild("collect.drops"):FireServer(unpack(args))
