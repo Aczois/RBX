@@ -1,1 +1,2 @@
-
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
+local Window = OrionLib:MakeWindow({Name = "All-In-One Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AIOhub7472"})
