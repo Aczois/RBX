@@ -1,29 +1,33 @@
 local currentPlaceId = game.PlaceId
+
 if currentPlaceId == 893973440 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/FleeTheFacility"))()
 elseif currentPlaceId == 987654321 then
     loadstring(game:HttpGet("https://your-link-here.com/script2.lua"))()
 else
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Orion/Lib')))()
-local Window = OrionLib:MakeWindow({Name = "All-In-One Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AIOhub7472"})
+    local Window = OrionLib:MakeWindow({Name = "All-In-One Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "AIOhub7472"})
 
-local Tab = Window:MakeTab({
-	Name = "A",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+    local TabA = Window:MakeTab({
+        Name = "A",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
 
-local Tab = Window:MakeTab({
-	Name = "F",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = Tab:AddSection({
-	Name = "Flee The Facility"
-})
-Tab:AddButton({
-	Name = "YAFTFEM",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/FleeTheFacility"))()
-  	end    
-})
+    local TabF = Window:MakeTab({
+        Name = "F",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    local Section = TabF:AddSection({
+        Name = "Flee The Facility"
+    })
+
+    TabF:AddButton({
+        Name = "YAFTFEM",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Aczois/RBX/refs/heads/main/Safe/FleeTheFacility"))()
+        end    
+    })
+end
